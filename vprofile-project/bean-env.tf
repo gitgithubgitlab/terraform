@@ -141,3 +141,32 @@ resource "aws_elastic_beanstalk_environment" "vprofile-bean-prod" {
 
 }
 
+
+
+# resource "aws_elastic_beanstalk_application_version" "my_app_version" {
+#   name                = "my-application-version"
+#   application         = aws_elastic_beanstalk_application.vprofile-prod.name
+#   description         = "Application Version 1.0.0"
+#   # bucket = "my-bucket"
+#   # key = "terraform/key"
+
+#   source_bundle {
+#     bucket = "terra-state-z"
+#     key    = "terraform/vprofileapplication/source.zip" 
+#     # key    = "path/to/your/source-code.zip"  # Zip file containing your source code
+#   }
+# }
+
+
+# resource "aws_elastic_beanstalk_application_version" "my_app_version" {
+#   name          = "my-application-version"
+#   application   = aws_elastic_beanstalk_application.my_app.name
+#   description   = "Application Version 1.0.0"
+#   bucket        = "your-bucket-name"
+#   key           = "path/to/your/source-code.war"
+#   force_destroy = true
+# }
+
+
+
+
